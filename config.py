@@ -1,12 +1,3 @@
-# coding: UTF-8
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
-   file name: config.py
-   create time: 2017年06月25日 星期日 10时56分55秒
-   author: Jipeng Huang
-   
-   e-mail: huangjipengnju@gmail.com
-   github: https://github.com/hjptriplebee
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
 import tensorflow as tf
 import numpy as np
 import argparse

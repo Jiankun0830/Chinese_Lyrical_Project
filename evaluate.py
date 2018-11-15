@@ -1,12 +1,3 @@
-# coding: UTF-8
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
-   file name: model.py
-   create time: 2018年06月11日 星期一 13时53分42秒
-   author: Jipeng Huang
-   e-mail: huangjipengnju@gmail.com
-   github: https://github.com/hjptriplebee
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
-#evalute model, just for test
 import data
 from model import *
 

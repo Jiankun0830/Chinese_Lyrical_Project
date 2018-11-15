@@ -1,11 +1,3 @@
-# coding: UTF-8
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
-   file name: model.py
-   create time: 2017年06月25日 星期日 10时47分48秒
-   author: Jipeng Huang
-   e-mail: huangjipengnju@gmail.com
-   github: https://github.com/hjptriplebee
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
 from config import *
 
 class MODEL:

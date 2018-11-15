@@ -1,11 +1,3 @@
-# coding: UTF-8
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
-   file name: data.py
-   create time: 2017年06月23日 星期五 17时17分36秒
-   author: Jipeng Huang
-   e-mail: huangjipengnju@gmail.com
-   github: https://github.com/hjptriplebee
-'''''''''''''''''''''''''''''''''''''''''''''''''''''
 from config import *
 
 class POEMS:

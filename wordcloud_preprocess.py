@@ -2,6 +2,7 @@ typeName = "poetryTang"
 filepath = "./dataset/" + typeName + "/"
 filename = filepath + typeName + ".txt"
 
+
 saveFile_author = open(filepath + typeName + "_author.txt", "w", encoding="UTF-8")
 saveFile_content = open(filepath + typeName + "_content.txt", "w", encoding="UTF-8")
 

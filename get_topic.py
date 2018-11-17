@@ -74,10 +74,10 @@ def set_arguments():
                         help='Input file path, default is {}'.format(DEFAULT_FIN))
     parser.add_argument('--ftopics', type=str, default=DEFAULT_FTOPICS,
                         help='Output topics file path, default is {}'.format(DEFAULT_FTOPICS))
-    parser.add_argument('--ftopics_words', type=str, default=DEFAULT_FTOPIC_WORDS,
-                        help='Output topic_words file path, default is {}'.format(DEFAULT_FTOPIC_WORDS))
-    parser.add_argument('--fwords', type=str, default=DEFAULT_FWORDS,
-                        help='Output words file path, default is {}'.format(DEFAULT_FWORDS))
+    #parser.add_argument('--ftopics_words', type=str, default=DEFAULT_FTOPIC_WORDS,
+    #                    help='Output topic_words file path, default is {}'.format(DEFAULT_FTOPIC_WORDS))
+    #parser.add_argument('--fwords', type=str, default=DEFAULT_FWORDS,
+    #                    help='Output words file path, default is {}'.format(DEFAULT_FWORDS))
     parser.add_argument('--n_topic', type=int, default=DEFAULT_N_TOPIC,
                         help='Topics count, default is {}'.format(DEFAULT_N_TOPIC))
     parser.add_argument('--n_topic_words', type=int, default=DEFAULT_N_TOPIC_WORDS,

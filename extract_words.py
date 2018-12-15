@@ -1,7 +1,7 @@
 import jieba
 import os
 
-typeName =  "songci"
+typeName =  "poetrySong"
 filePath = "./dataset/"+typeName+"/Famous_authors"
 savePath = "./dataset/"+typeName+"/Famous_authors_words"
 

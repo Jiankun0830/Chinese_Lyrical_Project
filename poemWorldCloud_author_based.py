@@ -2,9 +2,12 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
+from xpinyin import Pinyin
 import os
 
-typeName = "songci"
+pinyin = Pinyin()
+
+typeName = "poetrySong"
 filepath = "./dataset/"+typeName+"/famous_authors_words"
 
 SUTD_mask = np.array(Image.open("SUTD.png"))
@@ -34,3 +37,4 @@ def eachFile(filePath):
 
 if __name__ == '__main__':
     eachFile(filepath)
+    #print(pinyin.get_pinyin("./dataset/"+typeName+"/famous_authors_words/"+"李白"))

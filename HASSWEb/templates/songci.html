@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+<br>
+<br>
+<br>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready( function () {
+    $('#tabledata').DataTable();
+} );
+
+</script>
+<br>
+<br>
+<table id="tabledata" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Writer</th>
+        <th>Word Cloud</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in rows %}
+      <tr>
+        <td nowrap><font size="10" color="black">{{i[7:-4]}}</font></td>
+        <td>
+          <img src={{ url_for('static', filename='songci/'+i)}}>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+
+{% endblock %}

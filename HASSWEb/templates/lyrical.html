@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+
+<div align="center">
+        <img src={{ url_for('static', filename='images/background.jpg') }} align="middle">
+</div> 
+
+<br>
+<br>
+
+<main role="main">
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4"> 
+            <img class="rounded-circle" src={{ url_for('static', filename='images/taoyuanming.jpg') }} width="140" height="140">
+            <h2>Word Clouds Analysis</h2>
+            <p>We used over 55,000 Tang poems, 260,000 Song poems and 21,000 Song Ci from the Internet and sorted them by author and selected all the authors whose total work is more than 3,000 words. We did word analysis for all the authors and make corresponding word cloud for each of the author, including 128 Tang poets, 541 Song poets and 118 Song ci authors. </p>
+            <button  onclick="location='/word_cloud'" class='btn btn-default'>Word Cloud Database</button>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src={{ url_for('static', filename='images/paint1.jpg')}}  alt="Generic placeholder image" width="140" height="140">
+            <h2>Chinese Style Transfer</h2>
+            <p>We apply deep learning skills (neural style transfer) to compose a photo of SUTD and a photo of Marina Bay in the style of some famous Chinese paintings. This is a technique outlined in Leon A. Gatys’ paper, A Neural Algorithm of Artistic Style. We implemented the technique based on the paper. </p>
+            <button  onclick="location='/styletrans'" class='btn btn-default'>See the works</button>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src={{ url_for('static', filename='images/paint.jpg')}}  alt="Generic placeholder image" width="140" height="140">
+            <h2>Website Information</h2>
+            <p>References of images used and information about the project</p>
+            <button  onclick="location='/reference'" class='btn btn-default'>View Reference</button>
+          </div><!-- /.col-lg-4 -->
+          
+        </div><!-- /.row -->
+    </main>
+{% endblock %}

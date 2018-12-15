@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<h1>HOME</h1>
+<br>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready( function () {
+    $('#tabledata').DataTable();
+} );
+
+</script>
+<button type="button" value="go" onclick="location='/add'" class="btn btn-default">Add</button>
+
+<br>
+<br>
+<script>
+    function clicked() {
+       if (confirm('Do you want to upload?')) {
+           yourformelement.submit();
+       } else {
+           return false;
+       }
+    }
+</script>
+<table id="tabledata" class="table table-striped">
+    <thead>
+      <tr>
+        <th>product Code</th>
+        <th>product_category</th>
+        <th>item_id</th>
+        <th>has_serial_number</th>
+        <th>product_name</th>
+        <th>is_supported</th>
+        <th>product_image_name</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in rows %}
+      <tr>
+
+        <td nowrap>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+        <td>
+            <script type="text/javascript">
+                var num={{i[3]}}
+                if (num==1){
+                    document.write("Yes");
+                } else{
+                    document.write("No");
+                }
+                
+            </script>
+        </td>
+        <td>{{i[4]}}</td>
+        <td>
+            <script type="text/javascript">
+                var num={{i[5]}}
+                if (num==1){
+                    document.write("Yes");
+                } else{
+                    document.write("No");
+                }
+                
+            </script>
+        </td>
+        <td><a href="https://s3.amazonaws.com/{{link}}{{i[6]}}">{{i[6]}}</a></td>
+        <td><a href="modify/{{i[0]}}" class="btn btn-default">Modify</a></td>
+        <td><form action="{{url_for('deletecode',product_code=i[0])}}" method="POST">
+            <input type="submit" onclick="return clicked();" value="delete" class="btn btn-danger"/>
+        </form>
+      </tr>
+    {% endfor %}
+<script>
+    function clicked() {
+       if (confirm('Do you want to delete?')) {
+           yourformelement.submit();
+       } else {
+           return false;
+       }
+    }
+</script>
+
+
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+
+<style type="text/css">
+body{
+  background-color: #333;
+}
+</style>
+  <div class="row">
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay.jpg')}} style="width:100%">
+    </div>
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay-Qi.jpg')}} style="width:100%">
+    </div>
+  </div>
+
+<br>
+
+
+<div class="row">
+  <div class="col-md-6">
+   <img src={{ url_for('static', filename='paintings/marinaBay/QiBaishi/Qibaishi.jpg')}} style="width:100%">
+  </div>
+  <div class="col-md-6">
+    <h2 class="text-white">Qi Baishi’s Ink Painting of Flower</h2>
+    <p class="text-white">Qi Baishi (Chinese: 齐白石) was adept at the arts of poetry, calligraphy, and painting. He was active to the end of his long life and served as head of the Beijing Institute of Chinese Painting. His prodigious output reflects a diversity of interests and experience, generally focusing on the smaller things of the world rather than the large landscape, and he continued the styles of 17th- and 18th-century Individualists such as Shitao and Zhu Da. Fish, shrimp, crabs, and frogs were his favourite subjects. He was most accomplished at simple, freely sketched compositions, but he could also successfully execute a meticulous style. Using heavy ink, bright colours, and vigorous strokes, he created ink painting of flower that expressed his love of nature and life.</p>
+  </div>
+</div>  
+
+  </div>
+</body>
+
+
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+
+<style type="text/css">
+body{
+  background-color: #333;
+}
+</style>
+  <div class="row">
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay.jpg')}} style="width:100%">
+    </div>
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay-fuchun.jpg')}} style="width:100%">
+    </div>
+  </div>
+
+<br>
+
+
+<div class="row">
+  <div class="col-md-6">
+   <img src={{ url_for('static', filename='paintings/marinaBay/Fuchun/fuchun-1.jpg')}} style="width:100%">
+  </div>
+  <div class="col-md-6">
+    <h2 class="text-white">Dwelling in the Fuchun Mountains</h2>
+    <p class="text-white">Dwelling in the Fuchun Mountains (Chinese: 富春山居图) is one of the few surviving works by the painter Huang Gongwang (1269–1354) and it is considered to be among his greatest works. Painted between 1348 and 1350, the Chinese landscape painting was burnt into two pieces in 1650. Today, one piece is kept in the Zhejiang Provincial Museum in Hangzhou, while the other piece is kept in the National Palace Museum in Taipei. The entire painting combined would measure 691.3 cm in length. It was "carefully designed and developed in layers of wet washes and brush strokes, giving a convincing appearance of off hand but inspired organisation and of spontaneous ink-play in detail"</p>
+  </div>
+</div>  
+
+  </div>
+</body>
+
+
+
+{% endblock %}

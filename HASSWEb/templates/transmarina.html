@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+<div style="text-align: center;">
+  <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay.jpg') }}>
+</div>
+<div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_5') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/marinaBay/marinaBay-XuBeihong.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: The Eight Horses</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_6') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/marinaBay/marinaBay-wu.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: Wu Guanzhong’s Oil Painting</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_7') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/marinaBay/marinaBay-Qi.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: Qi Baishi’s Ink Painting of Flower</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_8') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/marinaBay/marinaBay-fuchun.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: Dwelling in the Fuchun Mountains</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

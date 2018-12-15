@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br>
+<br>
+<br>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+           
+          <div class="col-md-7" >
+            <a href={{ url_for('tang') }}><font color="#000000"><h2 class="featurette-heading">Word Cloud Database for Tang poems</h2></a>
+            
+            <p class="lead">Tang Poems</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <a href={{ url_for('songshi') }}><font color="#000000"><h2 class="featurette-heading">Word Cloud Database for Song poems</h2></a>
+            <p class="lead">Song poems</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7" style = "float: left">
+            <a href={{ url_for('songci') }}><font color="#000000"><h2 class="featurette-heading">Word Cloud Database for Song Ci</h2></a>
+            <p class="lead">Song Ci</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <a href={{ url_for('shijing') }}><font color="#000000"><h2 class="featurette-heading">Word Cloud Database for Book of Odes</h2></a>
+            <p class="lead">Book of Odes</p>
+          </div>
+        </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+<div style="text-align: center;">
+  <img src={{ url_for('static', filename='paintings/SUTD/sutd-05.jpg') }}>
+</div>
+<div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_1') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/SUTD/SUTD_Wu.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: Wu Guanzhong’s Painting of Water Town</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_2') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/SUTD/SUTD-fuchun.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: Dwelling in the Fuchun Mountains</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_3') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/SUTD/SUTD-Qi.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: Qi Baishi’s Ink Painting of Flower</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <a href={{ url_for('pic_4') }}><img class="card-img-top" src={{ url_for('static', filename='paintings/SUTD/SUTD-Wu.jpg') }} alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">Style image: Wu Guanzhong’s Oil Painting</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

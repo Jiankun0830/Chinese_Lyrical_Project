@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+
+<style type="text/css">
+body{
+  background-color: #333;
+}
+</style>
+  <div class="row">
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay.jpg')}} style="width:100%">
+    </div>
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay-XuBeihong.jpg')}} style="width:100%">
+    </div>
+  </div>
+
+<br>
+
+
+<div class="row">
+  <div class="col-md-6">
+   <img src={{ url_for('static', filename='paintings/marinaBay/XuBeihong-BaJunTu/XuBeihong-BaJun.jpg')}} style="width:100%">
+  </div>
+  <div class="col-md-6">
+    <h2 class="text-white">The Eight Horses</h2>
+    <p class="text-white">The Eight Horses is one of Mr. Xu Beihong’s most famous works. We cannot avoid talking about Xu Beihong when we talk about Chinese paintings. He is well known for drawing horses, no matter it is meticulous or freehand, ink painting or oil painting. The horses he drew, either running or leaping are all extraordinary. Xu Beihong with his outstanding horses brought the beauty of traditional Chinese paintings to the world.</p>
+  </div>
+</div>  
+
+  </div>
+</body>
+
+
+
+{% endblock %}

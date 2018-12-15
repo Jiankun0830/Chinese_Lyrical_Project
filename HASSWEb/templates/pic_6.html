@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+
+<style type="text/css">
+body{
+  background-color: #333;
+}
+</style>
+  <div class="row">
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay.jpg')}} style="width:100%">
+    </div>
+    <div class="col-md-6">
+      <img src={{ url_for('static', filename='paintings/marinaBay/marinaBay-wu.jpg')}} style="width:100%">
+    </div>
+  </div>
+
+<br>
+
+
+<div class="row">
+  <div class="col-md-6">
+   <img src={{ url_for('static', filename='paintings/marinaBay/WuGuanzhong/WuGuanzhong-3.jpg')}} style="width:100%">
+  </div>
+  <div class="col-md-6">
+    <h2 class="text-white">Wu Guanzhong’s Oil Painting</h2>
+    <p class="text-white">Wu Guanzhong (Chinese: 吴冠中) was a contemporary Chinese painter widely recognized as a founder of modern Chinese painting. He is considered to be one of the greatest contemporary Chinese painters. Wu's artworks had both Western and Eastern influences, such as the Western style of Fauvism and the Eastern style of Chinese calligraphy. Wu had painted various aspects of China, including much of its architecture, plants, animals, people, as well as many of its landscapes and waterscapes in a style reminiscent of the impressionist painters of the early 1900s. He was also a writer on contemporary Chinese art.</p>
+  </div>
+</div>  
+
+  </div>
+</body>
+
+
+
+{% endblock %}
